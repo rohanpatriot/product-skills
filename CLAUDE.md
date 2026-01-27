@@ -1,6 +1,6 @@
-# Skills Template
+# Skills Repository
 
-This repository is a **skills.sh-compatible GitHub template** for building Claude Code skills. It enforces patterns required for discovery, installation, and proper skill behavior.
+This repository contains Claude Code skills that are discoverable and installable via skills.sh.
 
 ## Critical Requirements
 
@@ -24,16 +24,16 @@ description: What this skill does and when to use it. Claude uses this to decide
 ### Directory Structure (ENFORCED)
 
 ```
-skills-template/
+your-repo-name/
 ├── skills/                      # ALL skills MUST go here
-│   ├── example-skill/           # Directory name = skill name
+│   ├── your-skill-name/         # Directory name = skill name
 │   │   ├── SKILL.md             # REQUIRED - main skill file
 │   │   ├── references/          # Optional: supporting documentation
 │   │   └── workflows/           # Optional: step-by-step processes
 │   └── .internal/               # Hidden skills (internal: true)
-│       └── example-internal/    # Requires INSTALL_INTERNAL_SKILLS=1
+│       └── internal-skill/      # Requires INSTALL_INTERNAL_SKILLS=1
 ├── CLAUDE.md                    # Project instructions
-└── README.md                    # Template usage instructions
+└── README.md                    # Repository documentation
 ```
 
 ### File Naming (ENFORCED)
@@ -47,6 +47,45 @@ skills-template/
 - ❌ `MySkill/` (no camelCase)
 - ❌ `my_skill/` (no underscores)
 - ❌ `skill.md` (must be SKILL.md)
+
+## README Structure
+
+Your README.md should include these sections:
+
+### Title and Description
+
+```markdown
+# Your Repository Name
+
+Brief description of what this skills repository provides.
+```
+
+### Installation
+
+```markdown
+## Installation
+
+\`\`\`bash
+npx skills add owner/repo-name
+\`\`\`
+```
+
+Replace `owner/repo-name` with your GitHub username and repository name.
+
+### Available Skills
+
+```markdown
+## Available Skills
+
+| Skill | Description |
+|-------|-------------|
+| `/skill-name` | What this skill does |
+| `/another-skill` | What this other skill does |
+```
+
+### License
+
+Include a license section appropriate for your repository.
 
 ## Skill Design Philosophy
 
@@ -127,34 +166,7 @@ metadata:
 
 2. Place in `skills/.internal/` directory
 
-3. Install with: `INSTALL_INTERNAL_SKILLS=1 npx skills.sh install owner/repo`
-
-## GitHub Template Usage
-
-### Creating Your Skills Repository
-
-1. Click "Use this template" on GitHub
-2. Name your repository (this becomes your namespace)
-3. Clone your new repository
-
-### After Cloning - REQUIRED Steps
-
-1. **Update README.md** with your repository information
-2. **Delete example-skill/** or modify it completely
-3. **Create your skills** in `skills/` directory
-4. **Push to GitHub** to enable skills.sh discovery
-
-### Publishing to skills.sh
-
-Your skills are automatically discoverable once:
-1. Repository is public
-2. Skills are in `skills/` directory
-3. Each skill has valid `SKILL.md` with frontmatter
-
-Users install with:
-```bash
-npx skills.sh install your-username/your-repo
-```
+3. Install with: `INSTALL_INTERNAL_SKILLS=1 npx skills add owner/repo`
 
 ## Testing & Verification
 
@@ -162,10 +174,9 @@ npx skills.sh install your-username/your-repo
 
 ```bash
 # Test with Claude Code directly
-claude --plugin-dir /path/to/this/repo
+npx skills add ./path/to/this/repo
 
 # Verify a specific skill loads
-claude --plugin-dir /path/to/this/repo
 # Then run: /skill-name
 ```
 
@@ -173,13 +184,13 @@ claude --plugin-dir /path/to/this/repo
 
 ```bash
 # Install from your repo
-npx skills.sh install owner/repo-name
+npx skills add owner/repo-name
 
 # Install with internal skills
-INSTALL_INTERNAL_SKILLS=1 npx skills.sh install owner/repo-name
+INSTALL_INTERNAL_SKILLS=1 npx skills add owner/repo-name
 
 # List installed skills
-npx skills.sh list
+npx skills list
 ```
 
 ### Common Issues
