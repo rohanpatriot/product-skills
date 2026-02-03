@@ -5,7 +5,7 @@ Claude Code skills for product management and discovery. Install them to give Cl
 ## Installation
 
 ```bash
-npx skills.sh install rohanpatriot/product-skills
+npx skills install rohanpatriot/product-skills
 ```
 
 ## Available Skills
