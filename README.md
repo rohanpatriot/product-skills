@@ -1,109 +1,63 @@
-# Skills Template
+# Product Skills
 
-A template repository for creating Claude Code skills compatible with [skills.sh](https://skills.sh).
-
-## Quick Start
-
-1. Click "Use this template" on GitHub to create your repository
-2. Rename the example skill in `skills/example-skill/`
-3. Edit `SKILL.md` with your skill's logic and frontmatter
-4. Install and test locally
+Claude Code skills for product management and discovery. Install them to give Claude structured frameworks for product strategy work.
 
 ## Installation
 
-Install skills from this repository:
-
 ```bash
-# Install from GitHub
-npx skills.sh install owner/repo-name
-
-# Or install with internal skills visible
-INSTALL_INTERNAL_SKILLS=1 npx skills.sh install owner/repo-name
+npx skills.sh install rohanpatriot/product-skills
 ```
 
-## Testing Locally
+## Available Skills
 
-```bash
-# Test with Claude Code
-claude --plugin-dir /path/to/this/repo
-```
+| Skill | Description |
+|-------|-------------|
+| `continuous-discovery` | Applies Teresa Torres's continuous discovery habits — setting outcomes, interviewing customers, mapping opportunities, generating solutions, and testing assumptions |
+
+## Skill Details
+
+### Continuous Discovery
+
+Guides product trios through the full continuous discovery loop:
+
+**Workflows:**
+- **Set Outcomes** — Define, negotiate, and commit to a product outcome tied to business results
+- **Map Opportunities** — Interview customers, create snapshots, and build an Opportunity Solution Tree
+- **Ideate Solutions** — Generate, compare, and select solutions using individual-first ideation
+- **Test Assumptions** — Identify leap-of-faith assumptions and design small, fast tests
+
+**References included:**
+- Core thesis and prerequisite mindsets
+- 8 discovery frameworks with application guidance
+- 12 guiding principles
+- 11 step-by-step techniques
+- 28 anti-patterns organized by phase
+- Terminology precision guide
+
+**Trigger phrases:** Opportunity Solution Trees, product trios, assumption testing, continuous interviewing, product outcomes, experience maps, interview snapshots.
 
 ## Repository Structure
 
 ```
-skills-template/
+product-skills/
 ├── skills/
-│   ├── example-skill/           # Your public skills go here
-│   │   ├── SKILL.md             # Main skill file (required)
-│   │   ├── references/          # Supporting documentation
-│   │   └── workflows/           # Step-by-step processes
-│   └── .internal/               # Hidden skills (require INSTALL_INTERNAL_SKILLS=1)
-├── CLAUDE.md                    # Project instructions
-└── README.md                    # This file
+│   └── continuous-discovery/
+│       ├── SKILL.md
+│       ├── references/
+│       │   ├── anti-patterns.md
+│       │   ├── core-thesis.md
+│       │   ├── frameworks.md
+│       │   ├── principles.md
+│       │   ├── techniques.md
+│       │   └── voice.md
+│       └── workflows/
+│           ├── set-outcomes.md
+│           ├── map-opportunities.md
+│           ├── ideate-solutions.md
+│           └── test-assumptions.md
+├── CLAUDE.md
+└── README.md
 ```
-
-## Creating Skills
-
-### Required: SKILL.md
-
-Every skill needs a `SKILL.md` file with YAML frontmatter:
-
-```yaml
----
-name: your-skill-name
-description: What this skill does and when Claude should use it.
----
-
-# Your skill content here
-```
-
-### Optional Directories
-
-- **references/** - Background knowledge, concept explanations, quick-reference tables
-- **workflows/** - Step-by-step processes the skill can invoke
-
-### File Linking
-
-Always use relative markdown links:
-
-```markdown
-See [workflows/main-workflow.md](workflows/main-workflow.md)
-See [references/concepts.md](references/concepts.md)
-```
-
-### Internal Skills
-
-Skills that should be hidden by default:
-
-1. Place them in `skills/.internal/`
-2. Add `metadata.internal: true` to frontmatter:
-
-```yaml
----
-name: internal-skill
-description: Only visible with INSTALL_INTERNAL_SKILLS=1
-metadata:
-  internal: true
----
-```
-
-## Skill Naming
-
-- Use lowercase with hyphens: `my-skill-name`
-- Be descriptive but concise
-- Name after what it does, not where it came from
-
-## Environment Variables
-
-| Variable | Purpose |
-|----------|---------|
-| `INSTALL_INTERNAL_SKILLS=1` | Reveals skills with `metadata.internal: true` |
-
-## Resources
-
-- [skills.sh](https://skills.sh) - Skills marketplace and installer
-- [vercel-labs/skills](https://github.com/vercel-labs/skills) - Official skills repository
-- [Claude Code Skills Docs](https://code.claude.com/docs/en/skills) - Skill development guide
 
 ## License
 
