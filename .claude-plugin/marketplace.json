@@ -1,0 +1,18 @@
+{
+  "name": "product-skills",
+  "metadata": {
+    "description": "Claude Code skills for product management and discovery",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "product-skills",
+      "description": "Product management skills including continuous discovery habits for setting outcomes, interviewing customers, mapping opportunities, and testing assumptions",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./skills/continuous-discovery"
+      ]
+    }
+  ]
+}
