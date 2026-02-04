@@ -30,8 +30,6 @@ your-repo-name/
 │   │   ├── SKILL.md             # REQUIRED - main skill file
 │   │   ├── references/          # Optional: supporting documentation
 │   │   └── workflows/           # Optional: step-by-step processes
-│   └── .internal/               # Hidden skills (internal: true)
-│       └── internal-skill/      # Requires INSTALL_INTERNAL_SKILLS=1
 ├── CLAUDE.md                    # Project instructions
 └── README.md                    # Repository documentation
 ```
@@ -150,24 +148,6 @@ These patterns **WILL FAIL**:
 - ❌ Absolute paths: `/Users/me/project/skills/...`
 - ❌ No path: just mentioning a filename
 
-## Internal Skills
-
-For skills that should be hidden by default:
-
-1. Add to SKILL.md frontmatter:
-```yaml
----
-name: internal-skill-name
-description: What this skill does.
-metadata:
-  internal: true
----
-```
-
-2. Place in `skills/.internal/` directory
-
-3. Install with: `INSTALL_INTERNAL_SKILLS=1 npx skills add owner/repo`
-
 ## Testing & Verification
 
 ### Local Testing
@@ -186,9 +166,6 @@ npx skills add ./path/to/this/repo
 # Install from your repo
 npx skills add owner/repo-name
 
-# Install with internal skills
-INSTALL_INTERNAL_SKILLS=1 npx skills add owner/repo-name
-
 # List installed skills
 npx skills list
 ```
@@ -199,11 +176,5 @@ npx skills list
 |---------|-------|-----|
 | Skill not discovered | Missing/invalid frontmatter | Add required `name` and `description` |
 | Links don't resolve | Wrong link format | Use `[text](relative/path.md)` format |
-| Internal skill visible | Missing `metadata.internal` | Add to frontmatter |
 | Name mismatch | Directory ≠ frontmatter name | Make them match exactly |
 
-## Environment Variables
-
-| Variable | Purpose |
-|----------|---------|
-| `INSTALL_INTERNAL_SKILLS=1` | Reveals skills with `metadata.internal: true` |

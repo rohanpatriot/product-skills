@@ -1,5 +1,8 @@
 {
   "name": "product-skills",
+  "owner": {
+    "name": "rohanpatriot"
+  },
   "metadata": {
     "description": "Claude Code skills for product management and discovery",
     "version": "1.0.0"
