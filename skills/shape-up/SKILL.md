@@ -60,7 +60,7 @@ Use the `AskUserQuestion` tool to determine what the user needs:
 | Shape Up Activity | Primary Reference | Key Concepts |
 |-------------------|-------------------|--------------|
 | Shaping ideas, setting appetite | [core-concepts.md](references/core-concepts.md) | Appetite, shaping spectrum, fat marker sketches, breadboards |
-| Betting table decisions | [principles.md](references/principles.md) | Bets not backlogs, circuit breaker, cooling down |
+| Betting table decisions | [principles.md](references/principles.md) | Bets not backlogs, circuit breaker, cool-down |
 | Progress tracking | [core-concepts.md](references/core-concepts.md) | Hill charts, scopes, uphill vs. downhill work |
 | Scope cutting | [anti-patterns.md](references/anti-patterns.md) | Scope hammering, must-haves vs. nice-to-haves |
 

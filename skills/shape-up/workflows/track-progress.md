@@ -34,12 +34,12 @@ Document the state:
 Cycle Status: Week [X] of [6]
 
 Scope: [Name]
-  Position: [uphill / top / downhill / done]
+  Position: [far uphill / mid-uphill / top of hill / mid-downhill / near done / done]
   Last moved: [X days / X weeks ago]
   Team assessment: [what the team says about this scope]
 
 Scope: [Name]
-  Position: [uphill / top / downhill / done]
+  Position: [far uphill / mid-uphill / top of hill / mid-downhill / near done / done]
   Last moved: [X days / X weeks ago]
   Team assessment: [what the team says about this scope]
 ```

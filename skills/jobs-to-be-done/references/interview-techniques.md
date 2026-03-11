@@ -217,18 +217,18 @@ Customers signal energy in the vocabulary they use:
 
 ### Energy Mapping Template
 
-After the interview, assign an energy level (1-5) to each stage and note what drove the shift:
+After the interview, assign an energy level (1-7) to each stage and note what drove the shift:
 
 ```
 Stage            | Energy | What drove it
 -----------------|--------|----------------
-First thought    | [1-5]  | _______________
-Passive looking  | [1-5]  | _______________
-Active looking   | [1-5]  | _______________
-Deciding moment  | [1-5]  | _______________
-Big hire         | [1-5]  | _______________
-First use        | [1-5]  | _______________
-Settled state    | [1-5]  | _______________
+First thought    | [1-7]  | _______________
+Passive looking  | [1-7]  | _______________
+Active looking   | [1-7]  | _______________
+Deciding moment  | [1-7]  | _______________
+Big hire         | [1-7]  | _______________
+First use        | [1-7]  | _______________
+Settled state    | [1-7]  | _______________
 ```
 
 ---
