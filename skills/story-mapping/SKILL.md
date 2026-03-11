@@ -45,10 +45,10 @@ Use the `AskUserQuestion` tool to determine what the user needs:
 
 | Response | Workflow |
 |----------|----------|
-| Build a map / start fresh / map the user journey | `workflows/build-map.md` |
-| Write stories / generate user stories / break down tasks | `workflows/generate-stories.md` |
-| Slice releases / plan MVP / walking skeleton / release planning | `workflows/slice-releases.md` |
-| Facilitate / run a session / workshop / planning with team | `workflows/facilitate-planning.md` |
+| Build a map / start fresh / map the user journey | [workflows/build-map.md](workflows/build-map.md) |
+| Write stories / generate user stories / break down tasks | [workflows/generate-stories.md](workflows/generate-stories.md) |
+| Slice releases / plan MVP / walking skeleton / release planning | [workflows/slice-releases.md](workflows/slice-releases.md) |
+| Facilitate / run a session / workshop / planning with team | [workflows/facilitate-planning.md](workflows/facilitate-planning.md) |
 
 ## Artifacts This Skill Produces
 
@@ -63,7 +63,7 @@ Use the `AskUserQuestion` tool to determine what the user needs:
 - **Task** — steps within an activity (e.g., "Search by date", "Filter by price")
 - **Story** — a specific way to accomplish a task (e.g., "As a traveler, I can search by departure city")
 - **Backbone** — the top row: all activities in left-to-right user sequence
-- **Walking skeleton** — the thinnest vertical slice that lets a user go end-to-end
+- **Walking skeleton** — the thinnest end-to-end slice across the full backbone that lets a user go end-to-end
 - **Mile wide, inch deep** — go across the full backbone before going deep on any part
 
 ## Voice

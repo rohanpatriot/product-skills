@@ -256,7 +256,7 @@ Common next steps:
 - Return with engineering estimates for Release 1 stories (who, by when?)
 - Follow up on open questions (who owns each question?)
 
-**Do not leave the session without owners on every action.** Unmated actions disappear.
+**Do not leave the session without owners on every action.** Unmet actions disappear.
 
 ---
 

@@ -230,9 +230,9 @@ The walking skeleton is the thinnest slice that lets a user go end-to-end. If yo
 
 Once you have a backbone with tasks, you are ready to move to the next phase. Depending on your team's needs:
 
-- **Generate stories** → Go to `workflows/generate-stories.md`
-- **Slice releases** → Go to `workflows/slice-releases.md`
-- **Facilitate with stakeholders** → Go to `workflows/facilitate-planning.md`
+- **Generate stories** → Go to [generate-stories.md](./generate-stories.md)
+- **Slice releases** → Go to [slice-releases.md](./slice-releases.md)
+- **Facilitate with stakeholders** → Go to [facilitate-planning.md](./facilitate-planning.md)
 
 **What to do with the physical map:**
 If you built on sticky notes, photograph it immediately. Label each activity and its tasks. If you built digitally, export a snapshot and share it with everyone who was in the room. The map is a shared artifact — it belongs to the whole team, not to the person who facilitated.

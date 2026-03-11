@@ -4,7 +4,7 @@ This workflow guides you through slicing your story map into releases. Slicing i
 
 The most important release is Release 1: the walking skeleton. This workflow starts there.
 
-You should have a story map with activities, tasks, and stories before starting this workflow. If you don't, go to `workflows/build-map.md` and `workflows/generate-stories.md` first.
+You should have a story map with activities, tasks, and stories before starting this workflow. If you don't, go to [build-map.md](./build-map.md) and [generate-stories.md](./generate-stories.md) first.
 
 ---
 
@@ -169,7 +169,7 @@ Teams often treat Release 2 as "the features we didn't have time to do in Releas
 Place a second horizontal line across the map, below the first. Everything between line 1 and line 2 is Release 2.
 
 **How many releases should the map have?**
-See `references/slicing-principles.md`. In general: 3–5 release slices for a map that covers a significant product area. Fewer than 3 suggests you are not thinking far enough ahead. More than 6 suggests your releases are too thin or your map is too large.
+See [Slicing Principles](../references/slicing-principles.md). In general: 3–5 release slices for a map that covers a significant product area. Fewer than 3 suggests you are not thinking far enough ahead. More than 6 suggests your releases are too thin or your map is too large.
 
 **Output of this step:** A Release 2 line drawn on the map, with stories between the two lines representing the next meaningful increment of value.
 

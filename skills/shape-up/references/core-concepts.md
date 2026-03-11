@@ -45,7 +45,7 @@ This creates the right pressure. Teams cut nice-to-haves. They find the simplest
 
 **Shaped work** has four properties:
 1. **Roughness:** The solution is sketched at the right level — not pixel-perfect wireframes, not vague descriptions. Rough enough that the team has real creative latitude, specific enough that they know what they're building.
-2. **Solved:** The major unknowns are resolved. The shapeer has done enough thinking that the team won't encounter a dead end that makes the work impossible.
+2. **Solved:** The major unknowns are resolved. The shaper has done enough thinking that the team won't encounter a dead end that makes the work impossible.
 3. **Bounded:** It has a clear appetite. The team knows how much time it's worth.
 4. **No rabbit holes:** The obvious rabbit holes — tangents that could consume the entire budget — are explicitly identified and cut.
 

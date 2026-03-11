@@ -2,7 +2,7 @@
 
 This workflow guides you through generating user stories from a completed story map. Stories live at the bottom level of the map — beneath activities (backbone) and tasks. They describe specific ways a user might accomplish a task, and they vary by user need, context, or capability.
 
-You should have a backbone with tasks before starting this workflow. If you don't, go to `workflows/build-map.md` first.
+You should have a backbone with tasks before starting this workflow. If you don't, go to [build-map.md](build-map.md) first.
 
 ---
 
