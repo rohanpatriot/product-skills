@@ -1,6 +1,6 @@
 # Core Concepts
 
-The foundational ideas behind Shape Up. These aren't abstract principles — they are the practical mechanics that make the methodology work. Understanding them is prerequisite to shaping effective pitches and running clean cycles.
+The foundational ideas behind Shape Up. These aren't abstract principles — they are the practical mechanics that make the methodology work. Understanding them is a prerequisite to shaping effective pitches and running clean cycles.
 
 ---
 

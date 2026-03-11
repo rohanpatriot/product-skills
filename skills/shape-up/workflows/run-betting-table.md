@@ -115,7 +115,7 @@ For each pitch, the decision is binary: **bet** or **no bet**. There is no "mayb
 
 **Bet:** The pitch goes to a specific team for the upcoming cycle. The team's capacity is committed.
 
-**No bet:** The pitch doesn't go to the betting table this cycle. It doesn't go to a backlog. If the problem is still worth solving next cycle, it gets reshaped (or re-pitched as-is if nothing has changed).
+**No bet:** The pitch doesn't get bet this cycle. It doesn't go to a backlog. If the problem is still worth solving next cycle, it gets reshaped (or re-pitched as-is if nothing has changed).
 
 **Reasons to not bet:**
 - Problem doesn't feel real or well-evidenced
